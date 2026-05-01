@@ -1,0 +1,18 @@
+# Generated PRIMO/PenEasy simulation outputs
+*.IAEAphsp
+*.IAEAheader
+*.log
+*.OUT
+Easy.Out
+dynSQ.in
+PENdyn.geo
+fort.*
+init.out
+tally*.dat
+sum.*
+
+# Runtime process folders created from templates
+cases/**/Proc[0-9]/
+
+# Docker/container or local OS noise
+.DS_Store

@@ -1,0 +1,48 @@
+#--------------------------------------------------------------------
+#  PRIMO Macro v1.0
+#
+#  Macro: PRIMOMacro_DoseDPM
+#  Purpose: To tally a dose distribution from DICOM imported data
+#               using DPM as simulation engine
+#  Requirements:
+#    - An existing project with a linac set in an operational mode
+#    - A source PSF
+#    - A full set of DICOM files  (CT, Structures and Plan)
+#      in a DICOM repository
+#  How to adjust to your requirements:
+#   - change the path of the DICOM repository
+#   - change the path and name of the source phase space file
+#   - adjust the MLC code if necessary
+#   - adjust the simulation parameters 
+#
+#  last update: March, 2019
+#-------------------------------------------------------------------
+
+# 1 - Link the psf:  modify to define your own psf
+link.psf \path=c:\primo\projects\psfs\cl21-6s1\cl21-6s1.iaeaheader
+
+# 2- Path to a DICOM repository: modify to define your own
+set.dicom.repository \path=c:\primo\projects\dicom\repository\pat02
+
+# 3 - Import the CT scan 
+import.ct \reduce
+
+# 4 - Import the structures (optional)
+#      if the CT is a phantom made from structures use \fillbody 
+import.structures \airoutbody \segment
+
+# 5 - First import the plan with the MLC=300 (Varian millennium 120)
+import.plan \mlc=300
+
+# 6 - Config the simulation parameters for segments s2 and s3
+config.simu  \seg=s2s3 \engine=dpm \coarse \seeds 
+
+# 7 - Config variance reduction to splitting = 300 in the patient
+config.vr \split=300
+
+# 8 - Do simulate with DPM
+simulate
+
+# end-of-macro -----------------------------------------------------
+
+

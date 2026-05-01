@@ -1,0 +1,420 @@
+  
+ main: PRIMOpreDPM.matter                       opened as unit           11
+ main: PRIMOpreDPM.scpw                         opened as unit           13
+ main: PRIMOpreDPM.rstpw                        opened as unit           15
+ main: PRIMOpreDPM.lamph                        opened as unit           17
+ main: PRIMOpreDPM.compt                        opened as unit           19
+ main: PRIMOpreDPM.phote                        opened as unit           21
+ main: PRIMOpreDPM.pairp                        opened as unit           23
+ main: PRIMOpreDPM.brecon                       opened as unit           25
+ main: PRIMOpreDPM.lambre                       opened as unit           27
+ main: PRIMOpreDPM.bw                           opened as unit           29
+ main: PRIMOpreDPM.q                            opened as unit           31
+  
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wstep: data written to file PRIMOpreDPM.step                        
+ rstep: reading PRIMOpreDPM.step                        
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlammo: data written to file PRIMOpreDPM.lammo                       
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   74 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:  100 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   74 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   74 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   74 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   74 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   72 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:   94 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+ inimat:  106 data successfully read
+ inimat:  100 data successfully read
+ wbw: loading array
+ wbw: examining mesh
+ wbw: data written to unit 29
+ wqsurf: loading array
+ wqsurf: examining mesh
+ wqsurf: data written to unit 31
+ wscpw: data written to unit 13
+ wlambr: data written to unit 27
+ wrstpw: data written to unit 15
+ wrstpw: data written to unit 25
+ wilaph: data written to unit 17
+ wicmpt: data written to unit 19
+ wiphte: data written to unit 21
+ wipair: data written to unit 23
+  
+  
+ Have a nice day.
+  

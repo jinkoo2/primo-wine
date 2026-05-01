@@ -1,0 +1,26 @@
+MAT# FILE(max_20_char___) EABS(e-)  EABS(ph)  EABS(e+)  C1    C2    WCC      WCR      DSMAX   DESCRIPTION
+1    Mylar.mat            2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.0005  Mylar-Mirror
+2    Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  1.0e30  W-Jaws-skin
+3    Beryllium.mat        2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.0025  Be-Window
+4    Tantalum.mat         2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.1333  Ta-18x-F.Filter-insert
+5    Aluminum.mat         2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  1.0e30  *Al-screen-support
+6    Kapton.mat           2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.0012  Kapton-Ion-Chamber
+7    Air.mat              2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.5000  Air
+8    Copper.mat           2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.5000  Cu-Flattening-filter
+9    Water.mat            2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.5000  *Water-Phantom
+10   Iron.mat             2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  1.0e30  Fe-18x-Flattening-Filter
+11   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.0050  W-MLC-lower-skin
+12   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.0200  W-MLC-frontal-skin
+13   Tungsten18.mat       0.900e9   5.000e4   0.900e9   0     0     0        0        1.0e30  W-Primary-coll-non-skin
+14   Tungsten18.mat       0.900e9   5.000e4   0.900e9   0     0     0        0        1.0e30  W-jaws-non-skin
+15   Tungsten17.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  1.0e30  *W-bff15MV
+16   Tungsten18.mat       0.900e9   5.000e4   0.900e9   0     0     0        0        1.0e30  W-MLC-non-skin
+17   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.001 0.001 2.000e5  2.000e5  0.0063  W-target
+18   Copper.mat           2.000e5   5.000e4   2.000e5   0.001 0.001 2.000e5  2.000e5  0.0200  Cu-target
+19   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-absorber
+20   Air.mat              2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  0.5000  *Air-rotation
+21   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-psf-2
+22   Lead.mat             2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  2.000e5  1.0e30  *Pb-wall
+23   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-psf-1
+
+

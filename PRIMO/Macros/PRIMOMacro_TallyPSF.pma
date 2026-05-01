@@ -1,0 +1,31 @@
+#--------------------------------------------------------------------
+#  PRIMO Macro v1.0
+#
+#  Macro: PRIMOMacro_SourcePSF
+#  Purpose: Simulate segment s1 and tally a phase space file.
+#  Requirements:
+#    - An existing project with a linac set in an operational mode
+#  Adjust to your requirements:
+#   - beam parameters  {set to the default of the first nominal energy}
+#   - simulation parameters {10^9 histories}
+#
+#  last update: March, 2018
+#-------------------------------------------------------------------
+# steps:
+# 1- Remove any ct, plan and structures in the project
+#     by creating a water phantom w/ default dimensions
+# 2- Set the beam to the default values of the first nominal energy
+# 3- Set the simulation params for segment s1 
+# 4- Variance reduction = splitting roulette (radius for a 40x40 cm2 field)
+# 5- Do simulate
+#-------------------------------------------------------------------
+
+phantom \mats=water \thicks=30.0
+config.beam \nominal=1 
+config.simu  \engine=penelope \histories=1000000000 \seeds \cpus=4
+config.vr \roulettefull
+simulate
+
+# end-of-macro -----------------------------------------------------
+
+

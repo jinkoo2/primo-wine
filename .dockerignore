@@ -1,0 +1,6 @@
+*
+!PRIMO/
+!PRIMO/PenEasyLinac/
+!PRIMO/PenEasyLinac/**
+!docker/
+!docker/**

@@ -1,0 +1,149 @@
+#============================================#
+#                   PenEasy                  #
+#          input file generated with         #
+#                    PRIMO                   #
+#============================================#
+[SECTION CONFIG v.2012-06-02]
+        100000
+ 100000000
+        60
+1141813962 1863091192
+-        SEEDS FILE
+-        RESTART FILE
+-        DUMP FILE
+[END OF CONFIG SECTION]
+#
+[SECTION SOURCE BOX ISOTROPIC GAUSS SPECTRUM v.2013-01-02]
+ON
+ 1           PARTICLE TYPE
+ 0           PHOTON POLARISATION (1=YES, 0=NO)
+ 0 0 0       STOKES PARAMETERS (UNUSED IF POL=0)
+Energy(eV)  Probability
+5800000.00    1.0
+5800000.00   -1  
+58000.00            FWHM (eV)
+0.0  0.0  -0.1        CENTER COORD BOX ENCL (cm)
+0.0 0.0 0.0            BOX SIDES (cm)
+0.15 0.15               FWHM (cm)
+ 0.0  0.0  0.0      EULER ANGLES TO ROTATE BOX
+ 0                    MATERIAL (0=DO NOT CARE)
+ 0.0  0.0  1.0                DIRECTION VECTOR
+ 0.0  0.0      POLAR ANGLE INTERVAL [0,180]
+ 0.0  0.0        AZIMUTHAL ANGLE [PHI,DPHI]
+[END OF BIGS SECTION]
+#
+[SECTION SOURCE PHASE SPACE FILE v.2009-06-15]
+OFF
+1        PSF FORMAT (0=ASCII; 1=IAEA BINARY)
+         PSF FILENAME
+1                            SPLITTING FACTOR
+ 0.0  0.0  0.0    EULER ANG TO ROT POS AND DIR
+0.0  0.0  0.0   [DX,DY,DZ](cm) POSITION SHIFT
+ 0    VALIDATE BEFORE SIMULATION (1=YES, 0=NO)
+ 0.000e0    MAX PSF ENERGY (eV) (ADD 1023 keV)
+[END OF SPSF SECTION]
+#
+[SECTION PENGEOM+PENVOX v.2009-06-15]
+dynSQ.in         DYNAMIC SEQUENCE FILE
+PENdyn.geo                     QUADRICS
+FB_6XFFF.vox            VOXELS
+ 9                     TRANSPARENT QUADRIC MAT
+ 10                 GRANULARITY TO SCAN VOXELS
+[END OF GEO SECTION]
+#
+[SECTION PENELOPE v.2009-10-01]
+MAT# FILE(max_20_char___) EABS(e-)  EABS(ph)  EABS(e+)  C1    C2    WCC      WCR      DSMAX   DESCRIPTION
+1    Mylar.mat            2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0005  Mylar-Mirror
+2    Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  W-Jaws-skin
+3    Beryllium.mat        2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0025  Be-Window
+4    Tantalum.mat         2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.1333  Ta-18x-F.Filter-insert
+5    Aluminum.mat         2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  *Al-screen-support
+6    Kapton.mat           2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0012  Kapton-Ion-Chamber
+7    Air.mat              2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  Air
+8    Copper.mat           2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  Cu-Flattening-filter
+9    Water.mat            2.800e5   5.000e4   2.000e5   0.1   0.1   2.800e5  5.000e4  0.5000  *Water-Phantom
+10   Iron.mat             2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  Fe-18x-Flattening-Filter
+11   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0050  W-MLC-lower-skin
+12   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0200  W-MLC-frontal-skin
+13   Tungsten18.mat       0.900e9   2.000e5   0.900e9   0     0     0        0        1.0e30  W-Primary-coll-non-skin
+14   Tungsten18.mat       0.900e9   1.000e4   0.900e9   0     0     0        0        1.0e30  W-jaws-non-skin
+15   Tungsten17.mat       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  *W-bff15MV
+16   Tungsten18.mat       0.900e9   1.000e4   0.900e9   0     0     0        0        1.0e30  W-MLC-non-skin
+17   Tungsten18.mat       2.000e5   5.000e4   2.000e5   0.001 0.001 1.000e3  5.000e4  0.0063  W-target
+18   Copper.mat           2.000e5   5.000e4   2.000e5   0.001 0.001 1.000e3  5.000e4  0.0200  Cu-target
+19   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-absorber
+20   Air.mat              2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  *Air-rotation
+21   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-psf-2
+22   Lead.mat             2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  *Pb-wall
+23   Air.mat              0.900e9   0.900e9   0.900e9   0     0     0        0        1.0e30  *Air-psf-1
+24   Bronze.mat           2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0200  *FTBFilter
+ 25  Water.mat            6.458E+005   5.000e4   6.458E+005   0.1   0.1   6.458E+005   4.000e4  0.5   Water
+ 0  (SET MAT=0 TO END LIST)
+[END OF PEN SECTION]
+#
+[SECTION TALLY VOXEL DOSE v.2009-06-15]
+OFF
+ 0  0 ROI MIN,MAX X-INDEX (0 0 FOR ALL VOXELS)
+ 0  0 ROI MIN,MAX Y-INDEX (0 0 FOR ALL VOXELS)
+0  0 ROI MIN,MAX Z-INDEX (0 0 FOR ALL VOXELS)
+0      INCL QUAD CONTRIB TO VOXEL MASS & DOSE
+0    PRINT VOXELS MASS IN REPORT (1=YES,0=NO)
+0    PRINT COORDINATES IN REPORT (1=YES,0=NO)
+0.0        RELATIVE UNCERTAINTY (%) REQUESTED
+[END OF VDD SECTION]
+#
+[SECTION TALLY SPATIAL DOSE DISTRIB v.2009-06-15]
+OFF                       STATUS (ON or OFF)
+-20.25    20.25   81         XMIN,XMAX(cm),NXBIN
+-20.25    20.25   81         YMIN,YMAX(cm),NYBIN
+100.00   140.00   80         ZMIN,ZMAX(cm),NZBIN
+1    PRINT COORDINATES IN REPORT (1=YES,0=NO)
+0.00      RELATIVE UNCERTAINTY (%) REQUESTED
+[END OF SDD SECTION]
+#
+[SECTION TALLY PHASE SPACE FILE v.2009-06-15]
+ON
+ 1        PSF FORMAT (0=ASCII; 1=IAEA BINARY)
+ 23        DETECTION MATERIAL (NOT EQUAL 0)
+FB_6XFFFs1       PSF FILENAME
+[END OF PSF SECTION]
+#
+[SECTION SPLITTING-ROULETTE v.2011-06-17]
+OFF
+ 19.0        ROI SSD (cm)
+ 3.99        ROI RADIUS (cm)
+ 20        ROI MATERIAL
+ MAT COFF PROB NSPL MOD KSEC
+ 17  20.0  0.6  90  3  0    TARGET
+ 18  20.0  0.6  90  3  0    TARGET
+ 0   20.0  0.6  90  3  0    MAT 0->END
+[END OF SR SECTION]
+#
+[SECTION INTERACTION FORCING v.2009-06-15]
+OFF
+ 1.0
+ MAT  KPAR  ICOL  FORCING
+ 17  1  4   16
+ 18  1  4   16
+ 0    0     0     1.0
+[END OF VRIF SECTION]
+#
+[SECTION SPLITTING v.2009-06-15]
+ON
+ 0.001  DO NOT APPLY BELOW THIS STATISTICAL WGHT
+ 20        SPLITTING MATERIAL
+ 2         MODE (2=ROTATIONAL)
+ 15        SPLITTING FACTOR
+ 0.0  0.0  0.0    EULER ANGLES, IGNORED MODE=1
+ 0.0  0.0  0.0      SHIFT (cm), IGNORED MODE=1
+ +  SIGN OF W (+, - OR 0=BOTH), IGNORED MODE=1
+ 0.0  360.0  AZIMUTHAL SECTOR PHI,DPHI. MODE=2
+[END OF VRS SECTION]
+#
+[SECTION RUSSIAN ROULETTE v.2009-06-15]
+ OFF                        STATUS (ON or OFF)
+ 1.0       WMAX, DO NOT PLAY ABOVE THIS WEIGHT
+ 1                   RUSSIAN ROULETTE MATERIAL
+ 1.0                      SURVIVAL PROBABILITY
+[END OF VRRR SECTION]
+#

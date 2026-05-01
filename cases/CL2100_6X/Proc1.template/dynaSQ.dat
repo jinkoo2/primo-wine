@@ -1,0 +1,44 @@
+# Dynamic geometry file
+# Automatically generated with PRIMO version 0.3.64.1814
+#
+# Project ID: CL2100_6X
+Debug: 
+0
+Main geometry path:
+C:\PRIMO\penEasyLinac\dynLinac
+Linac model: 
+6
+Operation mode: 
+1
+Nominal energy:
+6
+Phantom dimensions:
+40.50 40.50 40.00
+Transform material:
+0
+Splitting factor applied on transform detector:
+1
+Geometry shift:
+0.0
+Radiosurgery cone:
+0
+Z-axis position:
+62.50
+Length:
+11.00
+Nominal aperture at isocenter:
+0.400
+Number of fields:
+1
+Field #:
+1
+Weight:
+1.00000
+Jaws (x1,x2,y1,y2):
+-5.00 5.00 -5.00 5.00
+Isocenter position (x,y,z):
+20.25 20.25 0.00
+Rotations (collimator, gantry, table):
+360.00 360.00 360.00
+MLC (code,leaves):
+0 0

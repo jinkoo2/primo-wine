@@ -1,0 +1,218 @@
+﻿History of changes and improvements made in PRIMO versions
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Version 0.3.(64-32).1814. Date 2022-10-06 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+* Minor bugs were corrected.
+
+* New materials were added
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Version 0.3.(64-32).1800. Date 2020-09-30 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+* The user's manual was updated 
+
+* Minor bugs were corrected.
+
+* Full 64 bit support allows the use the available computer memory (version 0.3.64.1800).
+
+* An automatic algorithm to improve the spatial match of the imported and the Monte Carlo dose distributions
+was added. 
+
+* An interactive function to apply small spatial displacements to the imported dose distribution was added. 
+
+* Support for RT plan reconstruction from TrueBeam logs files was incorporated. 
+
+* MLCs leaf offset factors (LOF) were refined for the Varian 120 and 120 HD MLCs.
+
+* Leaf transmission was refined for the Varian 120 and 120 HD MLCs.
+
+* Support for RT plans of Stereotactic Radiosurgery with cones was incorporated.
+
+* Use of the external dose as the reference dose distribution in Gamma analysis was added.
+
+* Dose export in the Matrixx Evolution text format was added.
+
+* Export of the external dose distribution in text format was added.
+
+* Comparison of point dose measurements with dose distributions by Gamma analysis was added.
+
+* Support for hybrid RT plans (IMRT + 3DCT) was added.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1772. Date 2019-08-02 
+
+* Minor bugs were corrected.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1770. Date 2019-06-07 
+
+* Percentage of Agreement (PA). A new quantity for the comparison of DVHs was introduced and implemented.
+
+* Generation of a PDF report for gamma analysis and DVH comparison.
+
+* Gamma analysis was extended to all the OARs and PTVs in a project. 
+
+* DPM 64 bits for PRIMO. Improvements were made in dynamic simulations to obtain a more efficient transition between control points. Available only in the 64 bits version.
+
+* Plan reconstruction from Varian Dynalogs files. A method for the reconstruction of treatment plans using the information stored in the Varian dynalog files was implemented.
+
+* Macro command interpreter. A workspace for the automation of simulation and processing tasks was implemented. A command interpreter was created to process a set of commands defined according to specific rules. 
+
+* The phase space analysis workspace was updated.
+
+* The manual was update to reflect the improvements.
+
+* Minor bugs were corrected.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1681. Date 2018-07-27 
+
+* A bug that produced an error in the calculation of a structure volume was corrected.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1659. Date 2018-06-20 
+
+* A bug that produced an error in the dose distribution when the phantom side exceded 50 cm was corrected.
+
+* New materials were added.
+
+* An error in the composition of material Delrin was corrected.
+
+* Other minor bugs were corrected.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1626. Date 2018-03-20 
+
+* A new (faster) gamma analysis algorithm is introduced. This algorithms uses a constant step of 0.04 cm for calculating the gamma index in the vicinity of the dose point.
+
+* A bug that always displayed an error message on the denoising of the dose distribution was corrected
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1610. Date 2018-03-08 
+
+* The maximum allowed control points in a plan was increased from 2000 to 3000.
+
+* A bug that restricted to 1000 the number of control points allowed in simulations with PENELOPE was corrected
+
+* Minor changes.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1600. Date 2018-01-31 
+
+* Major changes and additions (refer to the manual).
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.3.1.1336 beta. Date 2017-02-14 
+
+* Major changes and additions.
+
+* Parallel Dose Planning Method has been incorporated as a simulation engine 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.5.1307 Date 2015-11-20 
+
+* Minor bugs fixed. 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.5.1300 Date 2015-04-24 
+
+* The beam divergence has been added to the initial beam parameters.
+
+* A minor bug in the dose distribution visualization has been eliminated. This bug conducted to a miscalculation of the size of the sagittal view in cases where the dose distribution was much larger in the y-axis than in the x-axis.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.5.1202 Date 2014-12-29 
+
+* The Varian MLC 120 Millenium has been added.
+
+* The Varian MLC 120 HD has been fully rewritten.
+
+* The variance-reduction techniques at s1 of interaction forcing and splitting roulette (or rotational splitting) must not be simultaneously used. Current version avoids the possibility of selecting both techniques simultaneously.
+
+* The manual and the quick start guide have been updated.
+
+* A function to create a slab phantom is included. The phantom is created as a CT.
+
+* The list of materials that can be associated to HU in a CT augmented. Now it includes gold, RW1, RW3 and PlasticWater.
+
+* The nomenclature of the MLC banks and leaves was changed to match that used by the manufacturers.
+
+* Post-simulation weight factors can be assigned to fields. A separated dose file is generated per field and the dose is integrated every time the weight factors are changed. 
+
+* The simulation manager has been improved. Major new features are: 
+  - The user interface shows the information of all parallel processes running in a clearer way.
+  - The maximum number of simultaneous processes allowed has been increased to 120. Warning: It is responsability of the user to check that the amount of RAM and free disk space required for a given simulation is adequate. 
+  - In a multi-field simulation, fields are simulated sequentially. Therefore, the maximum number of processors that can be used in a multi-field simulation is now dictated by the hardware.
+  - All parallel processes start almost simultaneously. 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.3.398 Date 2014-08-26
+
+* A new linac named FakeBeam is included. FakeBeam is an experimentally-based geometry of the TrueBeam linac that allows to simulate the 6 MV and 10 MV Flattening-Filter-Free beams of this machine. Validation of this geometry shows an excellent agreement with dose profiles and depth-dose curves measured for the TrueBeam for a representative range of fields and depths.
+
+* In simulations in voxelized geometries, the cutoff energies EABS for electrons and positrons are calculated according to the voxel size and the Continuous-Slowing-Down-Approximation (CSDA) range in water. The transport parameters WCC and WCR are set equal to the cutoff energies of electrons and photons, respectively.
+
+* The default transport parameters for simulations in the water phantom were modified.
+
+* A new normalization option was included in the Dose Curve Comparison Window. In this option, the normalization factor is calculated as the ratio of the integral under the measured dose curve to the MC calculated curve. The integral is taken from the depth of maximum dose of the measured curve to the depth of 50% dose. This normalization method could be useful to reduce the effect of uncertainties in depth dose curve comparison.
+
+* Fields can be grouped in the Field Edit Window. Grouped fields have a common isocenter.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.3.144 Date 2014-07-08
+
+* A bug in the DICOM library that produced interchanged values of the row and column pixel spacing of imported images was fixed.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.3.137 Date 2014-05-27
+
+* A bug in the Varian 120 High Definition MLC geometry producing a wrong displacement of the leaves 1 and 2 of the B carriage (1B and 2B) was fixed.
+
+* The variance-reduction technique of interaction forcing of electrons in the target can be combined with splitting roulette or rotational splitting for the simulation of segment s1.
+
+* The transport parameters C1, C2, WCC and WCR (see PENELOPE manual for details) were changed in the default transport-parameters table to produce a more accurate angular distribution of the bremsstrahlung photons.
+
+* Initial beam parameters for Varian and Elekta photon beams were changed.
+
+* The 'BEV Edit' window was revised and improved. Major modifications include:
+  - The window can be resized/maximized.
+  - A check list with the current structures is included. The structures can be selected/unselected to appear/disappear in the images.
+  - The position of the isocenter, as well as the projection of the radiation fields, are now represented on the CT/phantom slices.
+  - The algorithm for creating the Digital Reconstructed Radiography (DRR) was improved.
+  - MLC leaves are numbered starting from 1 instead of 0.
+  - The MLC can be visualized opaque or transparent. Available by pressing the button 'Toggle opaque/transparent MLC' in the window's toolbar.
+  - Several contiguous MLC leaves can be selected and displaced together. To select a range of leaves, left click on the first leaf and press shift + left click on the last leaf.
+  - Leaf positions can now be entered numerically with the keyboard. Available by pressing the 'Edit selected leaves' button in the window's toolbar.
+  - A function to fit the MLC leaves position to a structure contour was incorporated. Available by pressing the 'Fit to structure' button in the window's toolbar.
+
+* The new default installation directory is c:\PRIMO\
+
+* Minor bugs were fixed.
+
+* Minor cosmetic changes.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Version 0.1.1.11  Date 2013-12-11
+
+* The geometry of the Varian MLC 120 HD has been tuned using experimental data.
+
+* The maximum allowed size of the water phantom has increased. The new maximum allowed size for the grid is 400x400x400 cmˆ3.
+
+* The maximum allowed source-to-surface distance (SSD) has increased to 600 cm.
+
+* The position of the phase-space file tallied at the downstream end of segment 2 (s2) cannot be varied. It is determined by the configuration of the linac that the user has chosen. Of course, the value of SSD at s3 remains variable and any valid position can be entered.
+
+* Interaction forcing at the target has been introduced as a possible variance-reduction technique. Its scope is more academic than practical, since Splitting Roulette and Rotational Splitting are more efficient variance-reduction techniques.
+
+* Simple splitting in the CT volume or in the water phantom can be performed when simulating all the segments simultaneously and can be combined with Splitting-Roulette.
+
+* Minor cosmetic changes.

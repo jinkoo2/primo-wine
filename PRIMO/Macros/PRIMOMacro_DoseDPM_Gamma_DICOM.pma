@@ -1,0 +1,56 @@
+#--------------------------------------------------------------------
+#  PRIMO Macro v1.0
+#
+#  Macro: PRIMOMacro_DoseDPM_GammaPRIMO
+#  Purpose: To simulate segments s2 and s3 with DPM to tally a
+#  dose distribution and to perform gamma analysis with an external
+#  PRIMO formatted dose distribution 
+#  Requirements:
+#    - An existing project with a linac set in an operational mode
+#    - A source PSF
+#    - A full set of DICOM files  (CT, Structures and Plan) in a
+#      DICOM repository
+#  Adjust to your requirements:
+#   - path of the DICOM repository
+#   - path and name of the source phase space file
+#   - simulation parameters 
+#
+#  last update: March, 2018
+#-------------------------------------------------------------------
+
+# 1 - Link the psf:  modify the path to your own psf
+link.psf \path=c:\primo\projects\psfs\cl21-6s1\cl21-6s1.iaeaheader
+
+# 2- Set paths to repositories:
+set.dicom.repository \path=c:\primo\projects\dicom\edda
+
+# 3 - Import the CT scan 
+import.ct \reduce
+
+# 4 - Import the structures (not mandatory)
+#      if the CT is a phantom made from structures use \fillbody 
+import.structures \airoutbody \segment
+
+# 5 - Import the plan: for a Varian 120 HD MLC use \mlc=400
+import.plan \mlc=300
+
+# 6 - Config the simulation parameters for segments s2 and s3
+config.simu  \seg=s2s3 \engine=dpm \coarse \seeds 
+
+# 7 - Config variance reduction to splitting = 300 in the patient
+config.vr \split=300
+
+# 8 - Do simulate with DPM
+simulate
+
+# 9 - Calibrate: Establish calibration factor to convert the dose to Gy
+#      Enter your own calibration parameters in the next command:
+calibrate \measured=1.0 \mu=100 \calculated=0.547
+
+# 10 - Gamma analysis inside body, default criteria, smoothing 
+#        the reference 'project' dose
+gamma \region=body \smooth=ref \extended \report
+
+# end-of-macro -----------------------------------------------------
+
+

@@ -1,0 +1,160 @@
+# >>>> CONFIG FILE FOR penEasy >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#
+# Template for PRIMO simulation in a water phantom geometry
+# using a phase space as the source of particles
+#
+# LAST UPDATE:
+#   2012-09-04 by Milrocas
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# This section will be modified according to user setting !!!!!!!
+#
+#
+[SECTION CONFIG v.2012-06-02]
+ 1.0e9                           NO. OF HISTORIES (<1.0e15)
+ 1.0e30                          ALLOTTED TIME (s) (+ FOR REAL TIME; - FOR CPU TIME)
+ 3600                            UPDATE INTERVAL (+ FOR REAL TIME (s) < 8.0e4; - FOR HISTORIES)
+ 11  11                          INITIAL RANDOM SEEDS
+ -                               SEEDS FILE; MUST ENTER SEEDS=0,0 TO APPLY
+ -                               RESTART FILE; MUST ENTER SEEDS=-1,-1 TO APPLY
+ penEasy.dmp                     OUTPUT DUMP FILE; ENTER '-' FOR 'NO DUMP'
+[END OF CONFIG SECTION]          (SIGNALS THE END OF THIS SECTION)
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# This section is kept off
+#
+[SECTION SOURCE BOX ISOTROPIC GAUSS SPECTRUM v.2013-01-02]
+ OFF                              STATUS (ON or OFF)
+ 1                               PARTICLE TYPE (1=ELECTRON, 2=PHOTON, 3=POSITRON)
+ 0                               ACTIVATE PHOTON POLARISATION (1=YES, 0=NO)
+ 0 0 0                           STOKES PARAMETERS (UNUSED IF POLARISATION=0)
+ Energy(eV)  Probability         ENERGY SPECTRUM (see instructions in ~/documentation/)
+ 10.0e6      1.0                   A single channel ([10,10]MeV) with null width
+ 10.0e6      -1                    A negative value signals the end of the list
+ 0.0                             FWHM(eV) OF GAUSSIAN ENERGY DISTRIB. [NOTE FWHM=SIGMA*sqrt(8*ln(2))]
+ 0.0  0.0  -100.0                CENTER COORDINATES OF THE BOX ENCLOSURE (cm)
+ 0.0  0.0  0.0                   BOX SIDES (cm)
+ 0.0  0.0                        FWHMs (cm) OF GAUSSIAN X,Y DISTRIBs.
+ 0.0  0.0  0.0                   EULER ANGLES [Rz,Ry,Rz](deg) TO ROTATE BOX
+ 0                               MATERIAL (0=DO NOT CARE)
+ 0.0  0.0  1.0                   DIRECTION VECTOR, NO NEED TO NORMALIZE
+ 0.0 2.86241                     DIRECTION POLAR ANGLE INTERVAL [THETA0,THETA1], BOTH VALUES IN [0,180]deg
+ 0.0 360.0                       DIRECTION AZIMUTHAL ANGLE INTERVAL PHI0 (IN (-360,360)deg) AND DeltaPHI (IN [0,360]deg)
+[END OF BIGS SECTION]
+# 
+#  this not part of standard PRIMO-penEasy
+# it is here just for testing
+# [SECTION SOURCE VIRTUAL MODEL v.2013-12-25]
+# svm_spectrum.dat				spectrum file name
+# -20.0  20.0  501				xmin,xmax,nx of fluence	
+# -20.0  20.0  501				ymin,ymax,ny of fluence	
+# svm_fluence.dat
+# [END OF SVM SECTION]
+#
+#
+# This section modified according the user setting !!!!!!!
+#
+[SECTION SOURCE PHASE SPACE FILE v.2009-06-15]
+ ON                              STATUS (ON or OFF)
+ 1                               PSF FORMAT (0=STANDARD penEasy ASCII; 1=IAEA BINARY)
+ 6MeV15x15-H35R8.psf             PSF FILENAME, REMOVE EXTENSION IF PSF FORMAT=1
+ 21                              SPLITTING FACTOR
+ 0.0  45.0  0.0                  EULER ANGLES [Rz,Ry,Rz](deg) TO ROTATE POSITION AND DIRECTION
+ 3.875 -97.3 2.1                 CARTESIAN COMPONENTS [DX,DY,DZ](cm) OF POSITION SHIFT
+ 0                               VALIDATE BEFORE SIMULATION (1=YES, MAY TAKE A WHILE; 0=NO)
+ 0.000e0                         MAX PSF ENERGY (eV) (UNUSED IF VALIDATE=1; ADD 1023 keV FOR e+)
+[END OF SPSF SECTION]
+# 
+# 
+#
+# This section modified according the user setting !!!!!!!
+# 
+[SECTION PENGEOM+PENVOX v.2009-06-15]
+ geoname                         QUADRICS FILE NAME, USE '-' IF NONE
+ -                               VOXELS FILE NAME, USE '-' IF NONE
+ 1                               TRANSPARENT QUADRIC MAT (USED ONLY IF QUAD&VOX)
+ 10                              GRANULARITY TO SCAN VOXELS (USED ONLY IF QUAD&VOX)
+[END OF GEO SECTION]
+# 
+# This section will be NOT modified
+#
+[SECTION PENELOPE v.2009-10-01]
+ MAT# FILE___(max 20 char) EABS(e-)  EABS(ph)  EABS(e+)  C1    C2  WCC      WCR      DSMAX   COMMENTS
+  1   Air.mat              280.0e3   20.00e3   280.0e3   0.1  0.1  280.0e3  20.00e3  0.5     Air
+  2   Water.mat            280.0e3   20.00e3   280.0e3   0.1  0.1  280.0e3  20.00e3  0.5     Water
+  0 (SET MAT=0 TO END LIST)
+[END OF PEN SECTION]
+# 
+#
+# This section will be NOT modified by the user
+#
+[SECTION TALLY VOXEL DOSE v.2009-06-15]
+ OFF                             STATUS (ON or OFF)
+ 0  0                            ROI MIN,MAX X-INDEX (0 0 FOR ALL VOXELS)
+ 0  0                            ROI MIN,MAX Y-INDEX (0 0 FOR ALL VOXELS)
+ 0  0                            ROI MIN,MAX Z-INDEX (0 0 FOR ALL VOXELS)
+ 0                               INCLUDE QUAD. CONTRIBUTION TO VOXEL MASS & DOSE (1=YES,0=NO)
+ 0                               PRINT VOXELS MASS IN REPORT (1=YES,0=NO)
+ 0                               PRINT COORDINATES IN REPORT (1=YES,0=NO)
+ 0.0                             RELATIVE UNCERTAINTY (%) REQUESTED
+[END OF VDD SECTION]
+
+# This section will be modified by the user
+
+[SECTION TALLY SPATIAL DOSE DISTRIB v.2009-06-15]
+ ON                              STATUS (ON or OFF)
+ 0.0  0.0   0                    XMIN,XMAX(cm),NXBIN (0 for DX=infty)
+ 0.0  0.0   0                    YMIN,YMAX(cm),NYBIN (0 for DY=infty)
+ 0.0  7.0   40                   ZMIN,ZMAX(cm),NZBIN (0 for DZ=infty)
+ 1                               PRINT COORDINATES IN REPORT (1=YES,0=NO)
+ 1.0                             RELATIVE UNCERTAINTY (%) REQUESTED
+[END OF SDD SECTION]
+
+[SECTION TALLY PHASE SPACE FILE v.2009-06-15]
+ OFF                             STATUS (ON or OFF)
+ 0                               PSF FORMAT (0=STANDARD penEasy ASCII; 1=IAEA BINARY)
+ 4                               DETECTION MATERIAL (NOT EQUAL 0)
+ output.psf                      PSF FILENAME, REMOVE EXTENSION IF FORMAT=1
+[END OF PSF SECTION]
+
+[SECTION SPLITTING-ROULETTE v.2011-06-17]
+ OFF
+ 19.0
+ 2.47
+ 20
+ MAT COFF PROB NSPL MOD KSEC                                                    
+ 0   0.0  0.0  1    1    0
+[END OF SR SECTION]
+
+[SECTION INTERACTION FORCING v.2009-06-15]
+ OFF                             STATUS (ON or OFF)
+ 1.0                             DON'T APPLY BELOW THIS STATISTICAL WEIGHT
+ MAT  KPAR  ICOL  FORCING  (SET MAT=0 TO END LIST)
+ 0    0     0     1.0
+[END OF VRIF SECTION]
+
+# This section modified according the user setting !!!!!!!
+#
+[SECTION SPLITTING v.2009-06-15]
+ OFF                             STATUS (ON or OFF)
+ 0.001                           WMIN, DO NOT SPLIT BELOW THIS WEIGHT
+ 2                               SPLITTING MATERIAL
+ 1                               SPLITTING MODE (1=SIMPLE; 2=ROTATIONAL; 3=XY)
+ 1                               SPLITTING FACTOR, IGNORED FOR MODE=3
+ 0.0  0.0  0.0                   EULER ANGLES [Rz,Ry,Rz](deg), IGNORED FOR MODE=1
+ 0.0  0.0  0.0                   SHIFT (cm), IGNORED FOR MODE=1
+ +                               SIGN OF W ('+', '-' OR '0'=BOTH), IGNORED FOR MODE=1
+ 0.0  360.0                      AZIMUTHAL INTERVAL PHI0 AND DeltaPHI (deg), ONLY IF MODE=2
+[END OF VRS SECTION]
+
+[SECTION RUSSIAN ROULETTE v.2009-06-15]
+ OFF                             STATUS (ON or OFF)
+ 1.0                             WMAX, DO NOT PLAY ABOVE THIS WEIGHT
+ 1                               RUSSIAN ROULETTE MATERIAL
+ 1.0                             SURVIVAL PROBABILITY
+[END OF VRRR SECTION]
+
+
+# >>>> END OF FILE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -1,0 +1,98 @@
+# PRIMO 0.1.3.xxxx
+# List of materials supported for dose calculation
+# Created Nov-2012
+# Revised: March-2018, July-2021
+#
+# References:
+# - Penelope material database:
+#     PENELOPE-2008: A code system for Monte Carlo simulation of electron and 
+#     photon transport. 
+#     F Salvat, J M Fernández-Varea and J Sempau
+#     Issy-les-Moulineaux, France, OECD/NEA No. 6416, 2009
+#     
+# - Inner bone composition taken from: 
+#     A bone composition model for Monte Carlo x-ray transport simulations.
+#     Hu Zhou, Paul J. Keall, and Edward E. Graves. 
+#     Med. Phys. 36(3) 1008-1018, 2009
+#
+# - Compendium of Material Composition Data for Radiation Transport Modeling
+#   RJ McConn Jr, CJ Gesh, RT Pagh, RA Rucker, RG Williams III
+#   Pacific Northwest National Laboratory. USA.
+#   PIET-43741-TM-963 PNNL-15870 Rev. 1#, March 2011
+#   http://www.pnnl.gov/main/publications/external/technical_reports/pnnl-15870rev1.pdf
+#
+# - Acuros External Beam Algorithm (Acuros XB) for Photons. Varian.
+#
+# - Atom5Y phantom manual
+#
+# Comments:
+# *default: =1 => the material will appear in the default list of PRIMO. 
+#           =0 => Otherwise.
+#           A maximum of 10 default materials will be considered in order of appearance.
+#
+# When inserting new items -> keep the order of increasing mass density ! 
+#-----------|--------------------|-----------------|--------------|-------------------|--------------------------|
+#           |                    | Material name 1 | Mass density |                   | description              |  
+# *default  | Material name      | % = empty       | (g/cm3)      | Filename.ext      | (not used by PRIMO)      |
+#-----------|--------------------|-----------------|--------------|-------------------|--------------------------|
+1            Air                   %                0.0012         Air.mat
+0            Air                   STP              0.0012         AirSTP.mat           Acuros 
+0            Cork                  %                0.1900         Cork.mat
+0            Lung                  A5Y              0.2050         A5Lung.mat           Atom5Y
+1            Lung                  (ICRP)           0.3000         LungICRP.mat
+0            Lung                  ICRP75           0.3000         Lung75.mat           Acuros ICRP 1975
+0            Wood                  %                0.7000         Wood.mat
+0            MixD                  Wax              0.9000         WaxMD.mat
+1            Adipose               tissue           0.9200         Adipose.mat
+0            Adipose               ICRP75           0.9200         Adipose75.mat        Acuros ICRP 1975
+0            Paraffin              Wax              0.9300         WaxPara.mat
+0            Polyethylene          %                0.9400         Polyethylene.mat
+0            RW1                   %                0.9700         RW1.mat
+0            MS20                  Muscle           1.0000         MS20.mat
+0            Water                 %                1.0000         Water.mat
+0            Soft                  tissue           1.0000         SoftTissue.mat 
+0            Breast                tissue           1.0200         Breast.mat 
+0            Brain                 (ICRP)           1.0300         Brain.mat 
+0            SolidWater            %                1.0360         SolidWater.mat     
+0            Muscle                striated         1.0400         MuscleStr.mat
+0            Testes                (ICRP)           1.0400         Testes.mat          
+0            RW3                   %                1.0450         RW3.mat     
+1            Muscle                skeletal         1.0500         MuscleSke.mat
+0            Muscle                skeletal75       1.0500         Skeletal75.mat       Acuros ICRP 1975
+0            Tissue                Ovary            1.0500         Ovary.mat
+0            M3                    Wax              1.0500         Wax3.mat
+0            SoftTissue            A5Y              1.0550         A5SoftTissue.mat     Atom5Y
+0            Blood                 %                1.0600         Blood.mat
+0            Polystyrene           %                1.0600         Polystyrene.mat
+0            SpinalCord            A5Y              1.0700         A5SpinalCord.mat     Atom5Y
+0            Brain                 A5Y              1.0700         A5Brain.mat          Atom5Y
+0            Skin                  (ICRP)           1.1000         Skin.mat
+1            Cartilage             (ICRP)           1.1000         Cartilage.mat
+0            Cartilage             ICRP75           1.1000         Cartilage75.mat      Acuros ICRP 1975
+0            Eye                   Lens             1.1000         Lens.mat
+0            Amber                 %                1.1000         Amber.mat
+0            A-150                 %                1.1270         A-150.mat            Tissue equivalent plastic 
+0            SpinalDisc            A5Y              1.1310         A5SpinalDiscs.mat    Atom5Y
+0            Polyacrylonitrile     %                1.1700         CarbonFiber.mat      Carbon fiber precursor
+0            Lucite                %                1.1900         Lucite.mat
+0            Inner                 Bone             1.3000         BoneIn.mat
+0            PVC                   %                1.3000         PVC.mat              Polyvinyl clhoride
+0            Delrin                %                1.4250         Delrin.mat           Polyoximethylene
+0            B-100                 %                1.4500         B-100.mat            Bone equivalent plastic
+0            Bone                  A5Y              1.5180         A5Bone.mat           Atom5y 
+0            C-552                 %                1.7600         C-552.mat            Air equivalent plastic
+0            B-110                 %                1.7850         B-110.mat            Bone equivalent plastic              
+1            Bone                  Compact          1.8500         BoneComp.mat  
+0            Bone                  Cortical         1.8500         BoneCort.mat       
+0            Bone                  ICRP75           1.8500         Bone75.mat           Acuros ICRP 1975
+0            Teflon                %                2.2000         Teflon.mat
+0            Aluminum              %                2.6989         Aluminum.mat
+0            Ti6Al4                Alloy            4.4300         Ti6Al4Alloy.mat 
+0            Titanium              %                4.5400         Titanium.mat 
+0            Nitinol               %                6.4500         Nitinol.mat
+0            CoCrMo                Alloy            7.8000         CoCrMoAlloy.mat 
+0            Steel                 %                7.9000         SteelMainz.mat       Steel plates 
+0            Stainless             Steel            8.0270         STainlessSteel.mat   Steel stainless
+0            Tungsten              %                18.000         Tungsten.mat     
+0            Gold                  %                19.300         Gold.mat     
+#-----------|--------------------|-----------------|--------------|---------------|--------------------------|

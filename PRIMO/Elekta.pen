@@ -1,0 +1,23 @@
+MAT# FILE(max_20_char___) EABS(e-)  EABS(ph)  EABS(e+)  C1    C2    WCC      WCR      DSMAX   DESCRIPTION
+ 1   ELK1-AIR08.PMT       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  Air
+ 2   ELK2-COPPER08.PMT    2.000e5   5.000e4   2.000e5   0.001 0.001 1.000e3  5.000e4  0.0500  Target-block
+ 3   ELK3-WRHE08.PMT      2.000e5   5.000e4   2.000e5   0.001 0.001 1.000e3  5.000e4  0.0050  Target-insert
+ 4   ELK4-WALLOY08.PMT    2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0025  Jaws-(skins)
+ 5   ELK5-STEEL08.PMT     2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  Flattening-Filter
+ 6   ELK6-A15083-08.PMT   2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.1000  Flat.Filter-base-plate
+ 7   ELK7-LEADSB08.PMT    2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.1000  e-Applicator
+ 8   ELK8-MYLAR08.PMT     2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0005  I.Chamber/Mirror/Screen
+ 9   ELK9-TANTALUM08.PMT  2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0010  Scattering-Foil
+ 10  ELK10-NICKEL08.PMT   2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0006  e-Window-(foil)
+ 11  ELK11-WATER08.PMT    2.800e5   5.000e4   2.800e5   0.1   0.1   2.800e5  5.000e4  0.5000  *Water-Phantom
+ 12  ELK4-WALLOY08.PMT    1.000e9   1.000e4   1.000e9   0.0   0.0   0.0000   0.0000   1.0e30  *Jaw-absorber
+ 13  ELK4-WALLOY08.PMT    2.000e5   2.000e5   2.000e5   0.1   0.1   2.000e5  5.000e4  1.0e30  Primary-collimator
+ 14  ELK1-AIR08.PMT       1.000e9   1.000e9   1.000e9   0.0   0.0   0.0000   0.0000   1.0e30  *Absorber
+ 15  ELK1-AIR08.PMT       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  *Rot.Splt-detector
+ 16  ELK1-AIR08.PMT       1.000e9   1.000e9   1.000e9   0.0   0.0   2.000e5  5.000e4  0.5000  *PS1-above-jaws
+ 17  ELK1-AIR08.PMT       1.000e9   1.000e9   1.000e9   0.0   0.0   2.000e5  5.000e4  0.5000  *PS2-above-phantom
+ 18  ELK1-AIR08.PMT       2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  *psf-above-top-plate
+ 19  ELK1-AIR08.PMT       1.000e9   1.000e9   1.000e9   0.0   0.0   2.000e5  5.000e4  0.5000  *PS4-above-frame
+ 20  ELK20-GRAPH08.PMT    2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.0001  4MV-FFilter-base-plate
+ 21  ELK4-WALLOY08.PMT    1.000e9   5.000e5   1.000e9   0.1   0.1   2.000e5  5.000e4  1.0e30  *Primary-Collim.-(skin)
+ 22  ELK22-WALLOY80.PMT   2.000e5   5.000e4   2.000e5   0.1   0.1   2.000e5  5.000e4  0.5000  Flat.Filter-10MV
